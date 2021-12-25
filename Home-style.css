@@ -1,19 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: rgba(215, 175, 90, 0.7);
+  background-color: rgb(215, 200, 150);
   color: rgb(110, 30, 30);
   font-family: cursive;
 }
 
 /* header */
+
 header {
-  /* background-color: black; */
-  /* color: seashell; */
+  height: 80px;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.Nav-bar a {
-  text-decoration: none;
-  color: rgb(110, 30, 30);
+.Header-txt {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
 }
-header h1 {
+.Header-h1-txt {
+  font-size: 1.5rem;
+  margin: 0px auto;
   width: fit-content;
   border-bottom: solid;
   border-top: solid;
@@ -21,8 +33,40 @@ header h1 {
   border-width: 5px;
   padding: 10px 30px;
 }
+.Header-p-txt {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 5px auto;
+  width: fit-content;
+}
+.Nav-bar {
+  position: absolute;
+  left: 250px;
+  top: 25px;
+}
+.Nav-bar a {
+  text-decoration: none;
+  color: rgb(110, 30, 30);
+}
 .Img-saitama {
-  height: 400px;
+  height: 80px;
+}
+.Img-top-right {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.Img-top-left {
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+.Buttom-header-gradient {
+  height: 25px;
+  width: 100%;
+  background: linear-gradient(black, rgba(215, 200, 150, 0));
+  position: absolute;
+  top: 80px;
 }
 
 /* main */
@@ -34,9 +78,25 @@ main img {
   width: 50%;
 }
 
+.Main-title-txt {
+  text-align: center;
+  border-bottom: solid;
+  border-top: solid;
+  border-radius: 25%;
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 40px;
+}
+.Main-title-h2-txt {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.Main-title-p-txt {
+  word-spacing: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 .Heros .Content {
   width: 50%;
-}
-.Img-heros {
-  align: flex-start;
 }
