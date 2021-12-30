@@ -38,12 +38,21 @@ header {
 .Nav-bar {
   position: absolute;
   top: 25px;
-  right: 250px;
+  left: 250px;
 }
 
 .Nav-bar a {
   text-decoration: none;
   color: rgb(110, 30, 30);
+}
+
+.Nav-bar-ul {
+  list-style-type: none;
+}
+
+.Nav-bar-ul a:hover {
+  color: rgb(215, 200, 150);
+  font-style: italic;
 }
 
 .Img-saitama {
@@ -84,6 +93,7 @@ main {
   width: 500px;
   margin: 40px auto 0px;
   padding: 10px;
+  text-shadow: 0px 0px 3px rgb(110, 30, 30);
 }
 
 .Main-title-h2-txt {
