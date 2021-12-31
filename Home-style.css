@@ -35,22 +35,30 @@ header {
 }
 
 .Nav-bar {
+  width: 100%;
   position: absolute;
-  left: 250px;
-  top: 25px;
+  top: 45px;
 }
 .Nav-bar a {
+  font-size: 1.2rem;
   text-decoration: none;
+  padding: 8px 8px;
   color: rgb(110, 30, 30);
 }
 
 .Nav-bar-ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .Nav-bar-ul a:hover {
   color: rgb(215, 200, 150);
   font-style: italic;
+  border-left: solid;
+  border-right: solid;
+  padding: 5px 5px;
+  border-radius: 50%;
 }
 
 .Img-saitama {
@@ -89,6 +97,7 @@ main img {
   border-bottom: solid;
   border-top: solid;
   border-radius: 25%;
+  border-width: 5px;
   width: 500px;
   margin: 40px auto 0px;
   padding: 10px;
