@@ -15,41 +15,47 @@ header {
   position: relative;
   position: sticky;
   top: 0;
-  z-index: 1;
 }
-.Header-txt {
+.Header-txt-img {
   height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .Header-h1-txt {
-  font-size: 1.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
   margin: 0px auto;
   width: fit-content;
+  height: fit-content;
   border-bottom: solid;
   border-top: solid;
   border-radius: 25px;
-  border-width: 5px;
-  padding: 10px 30px;
+  border-width: 3px;
+  padding: 5px 20px;
+  margin-bottom: 25px;
 }
 
 .Nav-bar {
   width: 100%;
   position: absolute;
-  top: 45px;
-}
-.Nav-bar a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  padding: 8px 8px;
-  color: rgb(110, 30, 30);
+  top: 50px;
 }
 
-.Nav-bar-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
+.Nav-bar li {
+  width: 250px;
+  text-align: center;
+}
+
+.Nav-bar-ul a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(110, 30, 30);
+  text-align: center;
+  transition: color 1s;
 }
 
 .Nav-bar-ul a:hover {
@@ -61,25 +67,21 @@ header {
   border-radius: 50%;
 }
 
+.Nav-bar-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 100px;
+}
+
 .Img-saitama {
   height: 80px;
 }
-.Img-top-right {
-  position: absolute;
-  right: 15px;
-  top: 0;
-}
-.Img-top-left {
-  position: absolute;
-  left: 5px;
-  top: 0;
-}
+
 .Buttom-header-gradient {
   height: 25px;
   width: 100%;
   background: linear-gradient(black, rgba(215, 200, 150, 0));
-  position: absolute;
-  top: 80px;
 }
 
 /* --- main --- */
@@ -91,6 +93,7 @@ main {
 main img {
   width: 100%;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .Main-title-txt {
@@ -100,7 +103,7 @@ main img {
   border-radius: 25%;
   border-width: 5px;
   width: 500px;
-  margin: 40px auto 0px;
+  margin: 0px auto 0px;
   padding: 10px;
   text-shadow: 0px 0px 3px rgb(110, 30, 30);
 }
@@ -127,10 +130,9 @@ main .Content {
   box-shadow: 0px 0px 10px rgb(110, 30, 30);
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 10px;
   border-radius: 10px;
-  grid-auto-flow: dense;
 }
 
 .Heros {
@@ -141,4 +143,17 @@ main .Content {
   box-sizing: border-box;
   width: 50%;
   border-bottom-right-radius: 0;
+}
+
+@media (max-width: 480px) {
+  .Heros {
+    display: flex;
+    flex-direction: column;
+  }
+  .Main-title-txt {
+    width: 350px;
+  }
+  .Img-heros {
+    width: 100%;
+  }
 }

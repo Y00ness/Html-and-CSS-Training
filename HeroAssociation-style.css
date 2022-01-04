@@ -14,44 +14,48 @@ body {
 header {
   position: relative;
   position: sticky;
-  z-index: 1;
+  top: 0;
 }
-
-.Header-txt {
+.Header-txt-img {
   height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-
 .Header-h1-txt {
-  font-size: 1.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin: 0px auto;
   width: fit-content;
-  margin: 0 auto;
-  border-top: solid;
+  height: fit-content;
   border-bottom: solid;
+  border-top: solid;
   border-radius: 25px;
-  border-width: 5px;
-  padding: 10px 30px;
+  border-width: 3px;
+  padding: 5px 20px;
+  margin-bottom: 25px;
 }
 
 .Nav-bar {
   width: 100%;
   position: absolute;
-  top: 45px;
+  top: 50px;
 }
 
-.Nav-bar a {
+.Nav-bar li {
+  width: 200px;
+  text-align: center;
+}
+
+.Nav-bar-ul a {
   font-size: 1.2rem;
   text-decoration: none;
-  padding: 8px 8px;
   color: rgb(110, 30, 30);
-}
-
-.Nav-bar-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  transition: color 1s;
 }
 
 .Nav-bar-ul a:hover {
@@ -63,30 +67,22 @@ header {
   border-radius: 50%;
 }
 
+.Nav-bar-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 100px;
+}
+
 .Img-saitama {
   height: 80px;
 }
 
-.Img-top-right {
-  position: absolute;
-  top: 0px;
-  right: 15px;
-}
-
-.Img-top-left {
-  position: absolute;
-  top: 0px;
-  left: 5px;
-}
-
 .Buttom-header-gradient {
-  position: absolute;
-  top: 80px;
   height: 25px;
-  background: linear-gradient(black, rgba(215, 200, 150, 0));
   width: 100%;
+  background: linear-gradient(black, rgba(215, 200, 150, 0));
 }
-
 /* --- main --- */
 
 main {
