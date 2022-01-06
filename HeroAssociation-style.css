@@ -91,21 +91,30 @@ main {
 
 .Main-title-txt {
   text-align: center;
-  border-top: solid;
   border-bottom: solid;
+  border-top: solid;
   border-radius: 25%;
   border-width: 5px;
   width: 500px;
-  margin: 40px auto 0px;
+  margin: 0px auto 0px;
   padding: 10px;
   text-shadow: 0px 0px 3px rgb(110, 30, 30);
+  animation: Rotate 1s 2 linear;
+}
+
+@keyframes Rotate {
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 
 .Main-title-h2-txt {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .Main-title-p-txt {
   word-spacing: 5px;
   font-weight: bold;
